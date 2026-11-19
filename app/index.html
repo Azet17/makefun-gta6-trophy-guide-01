@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA 6 Trophy Guide &amp; Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 GTA 6 PlayStation 5 trophies: checklist, roadmap to the platinum, missable warnings, and a cited guide for every trophy.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Legend</h1>
+    <p class="sub">The GTA 6 trophy guide &amp; tracker. Every trophy with its official name, description and grade, a guide in our own words with its sources, a roadmap to the platinum, and a checklist that saves in your browser. Fully offline — nothing leaves this page.</p>
+  </div>
+  <section class="progress-card" aria-label="Progress">
+    <p class="big"><span id="earned-count">0</span><span class="of"> / 55 earned</span></p>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
+    <p class="grade-line" id="grade-line"></p>
+    <p class="platinum-line" id="platinum-line"></p>
+  </section>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button type="button" data-view="checklist" class="active" aria-current="page">Checklist</button>
+  <button type="button" data-view="roadmap">Roadmap to Platinum</button>
+  <button type="button" data-view="missables">Missables</button>
+</nav>
+
+<main>
+  <section id="view-checklist" class="view">
+    <div class="controls">
+      <label class="search">Search <input id="search" type="search" placeholder="Trophy name or keyword…" autocomplete="off"></label>
+      <label>Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="activities">Activities</option>
+          <option value="crime">Crime &amp; robbery</option>
+          <option value="exploration">Exploration</option>
+          <option value="economy">Money &amp; shops</option>
+          <option value="online">Online</option>
+        </select>
+      </label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="check"><input id="earned-only" type="checkbox"> Earned only</label>
+      <label class="check"><input id="hide-spoilers" type="checkbox" checked> Hide story spoilers</label>
+      <span class="spacer"></span>
+      <button id="export" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+    </div>
+    <p class="status-line" id="status-line"></p>
+    <div class="layout">
+      <ul id="trophy-list" class="trophy-list"></ul>
+      <aside id="detail" class="detail" aria-live="polite">
+        <p class="detail-empty">Select a trophy to read its guide and sources.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <p class="intro">The road to <strong>Vice Got a Price!</strong> in eight stages. Stages follow the official descriptions: story first, the one missable step in Chapter 1, robbery tools as they unlock, then the long cleanup and 100% completion. Nothing here needs a second playthrough if you keep a manual save at the start of every chapter.</p>
+    <ol id="roadmap" class="roadmap"></ol>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <p class="intro">One trophy can be missed. Everything else stays open after the credits — including every side-character finale — so the list needs one playthrough, not two, if you handle the one below.</p>
+    <div id="missable-list" class="missable-list"></div>
+    <h2>Also watch out for</h2>
+    <ul class="warnings">
+      <li><strong>Race Against Yago (Chapter 3).</strong> A time-sensitive race in the street-racing stranger strand, marked with an hourglass icon. Do it the moment it appears — the strand counts toward Strangers &amp; Freaks. Source: Output Lag GTA 6 trophy list, checked 19 Nov 2026.</li>
+      <li><strong>No mission replay, no New Game Plus.</strong> Once a story mission is done you cannot select it again. The game has 15 manual save slots plus one autosave: keep one at the start of each chapter and an untouched one from just before the final mission. Source: Output Lag GTA 6 trophy list, checked 19 Nov 2026.</li>
+      <li><strong>Cheats switch off trophies and saving.</strong> Never use cheats on your trophy save. Source: Output Lag GTA 6 trophy list, checked 19 Nov 2026.</li>
+    </ul>
+    <h2>What you cannot miss</h2>
+    <p>All 17 story trophies (chapter completions, named missions, side-character finales) pop as you play or stay open after the story. All collectibles, stunts, Challenges, vaults and illegal operations remain available after the credits.</p>
+  </section>
+</main>
+
+<footer>
+  <h2>Sources &amp; honesty note</h2>
+  <p>Official trophy names, descriptions and grades: the PlayStation list as published on Exophase and PSNProfiles (the two agree on every name, description and grade). Hidden / visible split (27 visible, 28 hidden) and the missable warning: the same lists, plus the Output Lag GTA 6 trophy list (outputlag.com/guides/gta-6-trophy-list), checked 19 November 2026. Each trophy's guide names its sources beside it. GTA 6 released 19 November 2026 and no complete walkthrough exists yet, so where a step or location is not pinned down by a source, the guide says so plainly instead of inventing it. Guides are written in the author's own words for this entry; official names and descriptions are shown as PlayStation publishes them.</p>
+  <p>No Rockstar Games logo, artwork or box art is used. This guide is not affiliated with Rockstar Games or Sony. Your checklist is stored only in this browser (localStorage); export it to a file to back it up.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
